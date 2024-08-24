@@ -5,8 +5,427 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Menu"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Menu" Height="450" MaxHeight="650" Width="1000" MaxWidth="1200">
 
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid Background="Pink">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,0" >
+            <StackPanel  >
+                <Label Content="Menu" Style="{StaticResource Text}"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="0" Grid.Column="1" Background="HotPink">
+            <StackPanel >
+                <Label  Content="Ingrédients" Style="{StaticResource Text}"/>
+            </StackPanel>
+        </Border> 
+
+        <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource Border}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" Grid.Row="0" Background="Purple">
+                    <StackPanel Margin="10,10,10,0">
+                        <Button Height="20" Width="Auto">Ajouter</Button>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource DaysOfWeek}" Background="HotPink">
+                    <Label  Content="Lundi" Style="{StaticResource Text}"/>
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="2" Style="{StaticResource DaysOfWeek}" Background="HotPink">
+                    <Label  Content="Mardi" Style="{StaticResource Text}"/>
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="3" Style="{StaticResource DaysOfWeek}" Background="HotPink">
+                    <Label  Content="Mercredi" Style="{StaticResource Text}"/>
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="4" Style="{StaticResource DaysOfWeek}" Background="HotPink">
+                    <Label  Content="Jeudi" Style="{StaticResource Text}"/>
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="5" Style="{StaticResource DaysOfWeek}" Background="HotPink">
+                    <Label  Content="Vendredi" Style="{StaticResource Text}"/>
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="6" Style="{StaticResource DaysOfWeek}" Background="HotPink">
+                    <Label  Content="Samedi" Style="{StaticResource Text}"/>
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="7" Style="{StaticResource DaysOfWeek}" Background="HotPink">
+                    <Label  Content="Dimache" Style="{StaticResource Text}"/>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource MealTime}" Background="HotPink">
+                    <Label  Content="Dejuner" Style="{StaticResource Text}"/>
+                </Border>
+
+                <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="4" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="5" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="6" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="7" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+
+                <Border Grid.Row="2" Grid.Column="0" Style="{StaticResource MealTime}" Background="HotPink">
+                    <Label  Content="Dinner" Style="{StaticResource Text}"/>
+                </Border>
+
+                <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Grid.Column="4" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Grid.Column="5" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Grid.Column="6" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Grid.Column="7" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+
+                <Border Grid.Row="3" Grid.Column="0" Style="{StaticResource MealTime}" Background="HotPink">
+                    <Label  Content="Souper" Style="{StaticResource Text}"/>
+                </Border>
+                
+                <StackPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Grid.Column="3" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Grid.Column="4" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Grid.Column="5" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Grid.Column="6" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Grid.Column="7" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+
+                <Border Grid.Row="4" Grid.Column="0" Style="{StaticResource MealTime}" Background="HotPink">
+                    <Label  Content="Collations" Style="{StaticResource Text}"/>
+                </Border>
+
+                <StackPanel Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="4" Grid.Column="4" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="4" Grid.Column="5" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="4" Grid.Column="6" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="4" Grid.Column="7" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <Border Grid.Row="5" Grid.Column="0" Style="{StaticResource MealTime}" Background="HotPink">
+                    <Label  Content="Autres" Style="{StaticResource Text}"/>
+                </Border>
+
+                <StackPanel Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="5" Grid.Column="2" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="5" Grid.Column="3" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="5" Grid.Column="4" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="5" Grid.Column="5" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="5" Grid.Column="6" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="5" Grid.Column="7" VerticalAlignment="Center" Margin="2">
+                    <ComboBox>
+                        <ComboBoxItem Content="Item 1"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 2"></ComboBoxItem>
+                        <ComboBoxItem Content="Item 3"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+            </Grid>
+
+        </Border>
+
+        <Grid Grid.Column="1" Grid.Row="1">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Column="0" Grid.Row="0">
+                <StackPanel Margin="10">
+                    <CheckBox>Item 1</CheckBox>
+                    <CheckBox>Item 2</CheckBox>
+                    <CheckBox>Item 3</CheckBox>
+                    <CheckBox>Item 4</CheckBox>
+                </StackPanel>
+            </StackPanel>
+
+            <Border Grid.Column="0" Grid.Row="1" BorderBrush="Black" BorderThickness="0,2,0,0" Background="HotPink" >
+                <StackPanel Margin="10">
+                    <Button Height="25" Width="100">Envoyer</Button>
+                </StackPanel>
+            </Border>
+            
+        </Grid>
+            
     </Grid>
+        
 </Window>

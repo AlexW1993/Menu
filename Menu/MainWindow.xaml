@@ -14,8 +14,8 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-    
-    <Grid>
+
+    <Grid Background="Pink">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -27,13 +27,13 @@
             <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
 
-        <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,0" Background="SkyBlue">
+        <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,0" >
             <StackPanel  >
                 <Label Content="Menu" Style="{StaticResource Text}"/>
             </StackPanel>
         </Border>
 
-        <Border Grid.Row="0" Grid.Column="1" Background="LightBlue">
+        <Border Grid.Row="0" Grid.Column="1" Background="HotPink">
             <StackPanel >
                 <Label  Content="Ingrédients" Style="{StaticResource Text}"/>
             </StackPanel>
@@ -61,41 +61,41 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Border Grid.Column="0" Grid.Row="0">
+                <Border Grid.Column="0" Grid.Row="0" Background="Purple">
                     <StackPanel Margin="10,10,10,0">
                         <Button Height="20" Width="Auto">Ajouter</Button>
                     </StackPanel>
                 </Border>
 
-                <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource DaysOfWeek}" Background="Red">
+                <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource DaysOfWeek}" Background="HotPink">
                     <Label  Content="Lundi" Style="{StaticResource Text}"/>
                 </Border>
 
-                <Border Grid.Row="0" Grid.Column="2" Style="{StaticResource DaysOfWeek}" Background="Blue">
+                <Border Grid.Row="0" Grid.Column="2" Style="{StaticResource DaysOfWeek}" Background="HotPink">
                     <Label  Content="Mardi" Style="{StaticResource Text}"/>
                 </Border>
 
-                <Border Grid.Row="0" Grid.Column="3" Style="{StaticResource DaysOfWeek}" Background="Yellow">
+                <Border Grid.Row="0" Grid.Column="3" Style="{StaticResource DaysOfWeek}" Background="HotPink">
                     <Label  Content="Mercredi" Style="{StaticResource Text}"/>
                 </Border>
 
-                <Border Grid.Row="0" Grid.Column="4" Style="{StaticResource DaysOfWeek}" Background="Orange">
+                <Border Grid.Row="0" Grid.Column="4" Style="{StaticResource DaysOfWeek}" Background="HotPink">
                     <Label  Content="Jeudi" Style="{StaticResource Text}"/>
                 </Border>
 
-                <Border Grid.Row="0" Grid.Column="5" Style="{StaticResource DaysOfWeek}" Background="Green">
+                <Border Grid.Row="0" Grid.Column="5" Style="{StaticResource DaysOfWeek}" Background="HotPink">
                     <Label  Content="Vendredi" Style="{StaticResource Text}"/>
                 </Border>
 
-                <Border Grid.Row="0" Grid.Column="6" Style="{StaticResource DaysOfWeek}" Background="Purple">
+                <Border Grid.Row="0" Grid.Column="6" Style="{StaticResource DaysOfWeek}" Background="HotPink">
                     <Label  Content="Samedi" Style="{StaticResource Text}"/>
                 </Border>
 
-                <Border Grid.Row="0" Grid.Column="7" Style="{StaticResource DaysOfWeek}" Background="Gray">
+                <Border Grid.Row="0" Grid.Column="7" Style="{StaticResource DaysOfWeek}" Background="HotPink">
                     <Label  Content="Dimache" Style="{StaticResource Text}"/>
                 </Border>
 
-                <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource MealTime}" Background="Pink">
+                <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource MealTime}" Background="HotPink">
                     <Label  Content="Dejuner" Style="{StaticResource Text}"/>
                 </Border>
 
@@ -156,7 +156,7 @@
                 </StackPanel>
 
 
-                <Border Grid.Row="2" Grid.Column="0" Style="{StaticResource MealTime}" Background="Brown">
+                <Border Grid.Row="2" Grid.Column="0" Style="{StaticResource MealTime}" Background="HotPink">
                     <Label  Content="Dinner" Style="{StaticResource Text}"/>
                 </Border>
 
@@ -217,7 +217,7 @@
                 </StackPanel>
 
 
-                <Border Grid.Row="3" Grid.Column="0" Style="{StaticResource MealTime}" Background="Gold">
+                <Border Grid.Row="3" Grid.Column="0" Style="{StaticResource MealTime}" Background="HotPink">
                     <Label  Content="Souper" Style="{StaticResource Text}"/>
                 </Border>
                 
@@ -278,7 +278,7 @@
                 </StackPanel>
 
 
-                <Border Grid.Row="4" Grid.Column="0" Style="{StaticResource MealTime}" Background="Silver">
+                <Border Grid.Row="4" Grid.Column="0" Style="{StaticResource MealTime}" Background="HotPink">
                     <Label  Content="Collations" Style="{StaticResource Text}"/>
                 </Border>
 
@@ -338,7 +338,7 @@
                     </ComboBox>
                 </StackPanel>
 
-                <Border Grid.Row="5" Grid.Column="0" Style="{StaticResource MealTime}" Background="White">
+                <Border Grid.Row="5" Grid.Column="0" Style="{StaticResource MealTime}" Background="HotPink">
                     <Label  Content="Autres" Style="{StaticResource Text}"/>
                 </Border>
 
@@ -409,7 +409,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <StackPanel Grid.Column="0" Grid.Row="0" Background="LightCyan">
+            <StackPanel Grid.Column="0" Grid.Row="0">
                 <StackPanel Margin="10">
                     <CheckBox>Item 1</CheckBox>
                     <CheckBox>Item 2</CheckBox>
@@ -418,7 +418,7 @@
                 </StackPanel>
             </StackPanel>
 
-            <Border Grid.Column="0" Grid.Row="1" BorderBrush="Black" BorderThickness="0,2,0,0" Background="Aqua">
+            <Border Grid.Column="0" Grid.Row="1" BorderBrush="Black" BorderThickness="0,2,0,0" Background="HotPink" >
                 <StackPanel Margin="10">
                     <Button Height="25" Width="100">Envoyer</Button>
                 </StackPanel>

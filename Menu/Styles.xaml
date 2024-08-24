@@ -2,18 +2,16 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <Style x:Key="Text" TargetType="Label">
-        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Foreground" Value="Purple"/>
         <Setter Property="HorizontalAlignment" Value="center"/>
         <Setter Property="VerticalAlignment" Value="center"/>
         <Setter Property="FontSize" Value="15"/>
         <Setter Property="FontWeight" Value="Black"/>
         <Style.Triggers>
             <DataTrigger Binding="{Binding Content, RelativeSource={RelativeSource Self}}" Value="Menu">
-                <Setter Property="Foreground" Value="Purple"/>
-                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="FontSize" Value="30"/>
             </DataTrigger>
             <DataTrigger Binding="{Binding Content, RelativeSource={RelativeSource Self}}" Value="Ingrédients">
-                <Setter Property="Foreground" Value="Blue"/>
                 <Setter Property="FontSize" Value="25"/>
             </DataTrigger>
         </Style.Triggers>

@@ -9,11 +9,11 @@ using System.Data.SqlClient
 
 namespace Menu.BD
 {
-    internal class BD
+    internal class Bd
     {
         private readonly string _connection;
         public string Connection => _connection;
-        public BD()
+        public Bd()
         {
             _connection = @"Server=DESKTOP-LA6873F; Database=MenuManagement; Trusted_connection=true;";
         }

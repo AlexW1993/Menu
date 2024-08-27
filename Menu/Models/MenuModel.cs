@@ -8,7 +8,7 @@ namespace Menu.Models
 {
     public class MenuModel
     {
-        private int _id;
+        private string _id;
         private string _name;
         private bool _isBreakfast;
         private bool _isLunch;
@@ -16,7 +16,7 @@ namespace Menu.Models
         private bool _isSnack;
         private bool _isOther;
 
-        public int Id
+        public string Id
         {
             get => _id;
 
